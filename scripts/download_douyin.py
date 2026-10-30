@@ -68,4 +68,5 @@ if __name__ == "__main__":
     else:
         url = sys.argv[1]
     
-    download_douyin_video(url)
+    result = download_douyin_video(url)
+    sys.exit(0 if result else 1)
